@@ -4,10 +4,21 @@
 $username = '';
 $password = '';
 
-
-// "from" will be rung first and when answered
+// "from" will be rung first and when answered,
 // the second leg of the call will begin using 
 // the caller ID set in "caller_id"
+//
+// "from" can also be a SIP uri like:
+//
+// sip:01224900123@ip_address
+//
+// You should validate calls to 0870, 09, 118, 
+// 999, 070, international etc.
+// 
+// Contact SureVoIP for advice on this and the
+// options we can help you with as you will be 
+// billed otherwise.
+//
 $data = array(
    "to" => "447930323266",
    "from" => "441224279484",
