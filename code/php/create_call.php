@@ -13,7 +13,9 @@ $password = '';
 // sip:01224900123@ip_address
 //
 // You should validate calls to 0870, 09, 118, 
-// 999, 070, international etc.
+// 999, 070, international etc. e,g. just allow
+// calls "to" 01/02/07XXXXXXXXX but not 
+// 070XXXXXXXX
 // 
 // Contact SureVoIP for advice on this and the
 // options we can help you with as you will be 
