@@ -4,36 +4,39 @@
     <title>Create SureVoIP Conferences by POSTing JSON data with JQuery and Bootstrap using the SureVoIP API</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/bootstrap.min.js"></script>
   </head>
   <body>
     <h1>Create your SureVoIP Conference!</h1>
 
-    <form class="form-horizontal">
+    <form id="create_conf" class="form-horizontal">
       <div class="control-group">
         <label class="control-label" for="inputEmail">Email</label>
         <div class="controls">
-          <input type="text" id="inputEmail" placeholder="Email">
+          <input type="text" id="inputEmail" placeholder="Email Address">
           <button type="submit" class="btn btn-primary">Create</button>
         </div>
       </div>
     </form>
+ <script type="text/javascript">                                         
+    $('#create_conf').submit(function() {
+        alert('Handler for .submit() called.');
+        return false;
+    });
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/bootstrap.min.js">
-    <script type="text/javascript">                                         
-        $.ajax({
-          url:url,
-          type:"POST",
-          data:data,
-          contentType:"application/json; charset=utf-8",
-          dataType:"json",
-          success: function(){
-            ...
-          }
-        })
-     </script>                                                               
-
-  </body>
+    //$.ajax({
+    //    url:url,
+    //    type:"POST",
+    //    data:data,
+    //    contentType:"application/json; charset=utf-8",
+    //    dataType:"json",
+    //    success: function(){
+    //      ...
+    //    }
+    //})
+ </script>                                                               
+ </body>
 </html>
 
 
